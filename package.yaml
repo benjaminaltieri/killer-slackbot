@@ -27,6 +27,10 @@ dependencies:
 - lens
 - bytestring
 - aeson
+- lens-aeson
+- wuss
+- websockets
+- network-uri
 
 library:
   source-dirs: src
