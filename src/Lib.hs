@@ -1,7 +1,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 
 module Lib
-    ( someFunc
+    ( resume_prime_directive
     ) where
 
 import System.IO
@@ -13,8 +13,8 @@ import qualified Data.Text as T
 import Control.Lens ((&), (^.), (.~))
 import qualified Data.ByteString.Lazy.Char8 as BSL
 
-someFunc :: IO ()
-someFunc = do
+resume_prime_directive :: IO ()
+resume_prime_directive = do
     -- don't buffer IO
     hSetBuffering stdout NoBuffering
     -- load our .env and get our slackbot token
